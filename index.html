@@ -241,6 +241,34 @@ footer{background:var(--bg-s);border-top:.5px solid var(--border-str);padding:2.
 .consent-table .good-col{color:var(--green);font-weight:500}
 @media(max-width:768px){.arch-grid{grid-template-columns:1fr}.counter-split{grid-template-columns:1fr}.need-row{grid-template-columns:1fr}.deeper-grid{grid-template-columns:1fr 1fr}}
 
+
+/* GLOSSARY */
+.gl-section{max-width:1000px;margin:0 auto;padding:4rem 3rem;border-bottom:.5px solid var(--border)}
+.gl-intro{font-size:16px;font-weight:300;color:var(--text-s);line-height:1.8;margin-bottom:2.5rem;padding-bottom:1.75rem;border-bottom:.5px solid var(--border)}
+.gl-law-block{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-bottom:2.75rem;border:.5px solid var(--border-str)}
+.gl-law-col{padding:1.4rem 1.6rem}
+.gl-law-a{background:#fdfaf2}.gl-law-b{background:#f7f5f0}
+.gl-law-head{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.6rem;padding-bottom:.5rem;border-bottom:.5px solid var(--border)}
+.gl-law-a .gl-law-head{color:var(--gold-m)}.gl-law-b .gl-law-head{color:var(--navy)}
+.gl-law-term{font-family:var(--ff-d);font-size:1.45rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.gl-law-def{font-size:14px;color:var(--text-s);line-height:1.72}
+.gl-law-ex{font-size:12.5px;color:var(--text-m);font-style:italic;margin-top:.5rem;padding:.4rem .75rem;background:rgba(138,110,24,.05);border-left:2px solid var(--gold-l)}
+.gl-cats{display:flex;flex-direction:column;gap:2.5rem}
+.gl-cat-title{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-m);margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.gl-cat-title::after{content:'';flex:1;height:.5px;background:var(--border-str)}
+.gl-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;border:.5px solid var(--border-str)}
+.gl-card{background:var(--bg-c);padding:1.1rem 1.25rem;border:.5px solid var(--border)}
+.gl-card:nth-child(even){background:var(--bg-s)}
+.gl-q{font-family:var(--ff-d);font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:.35rem;line-height:1.25}
+.gl-term-tag{font-family:var(--ff-mono);font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-m);display:block;margin-bottom:.28rem}
+.gl-a{font-size:13.5px;color:var(--text-s);line-height:1.7;font-weight:300}
+.gl-a em{color:var(--text);font-style:normal;font-weight:400}
+.gl-a a{color:var(--navy);border-bottom:.5px solid var(--border-str);text-decoration:none}
+.gl-a a:hover{color:var(--gold)}
+.gl-note{font-size:12px;color:var(--text-m);margin-top:.45rem;padding:.35rem .65rem;background:rgba(138,110,24,.05);border-left:2px solid var(--border-str);font-style:italic}
+.gl-full{grid-column:1/-1}
+@media(max-width:768px){.gl-section{padding:2.5rem 1.5rem}.gl-law-block{grid-template-columns:1fr}.gl-cards{grid-template-columns:1fr}}
+
 @media print{
   .topbar,.nav,.hero-actions,.btn-primary,.btn-secondary{display:none!important}
   body{font-size:10.5pt;line-height:1.65;background:#fff!important}
@@ -297,7 +325,7 @@ footer{background:var(--bg-s);border-top:.5px solid var(--border-str);padding:2.
 <!-- NAV -->
 <nav class="nav">
   <a href="#part0">Part 0 — Registry</a>
-  <a href="#part1">Part 1 — Legal Foundation</a>
+  <a href="#foundation">Foundation — Plain Language</a><a href="#part1">Part 1 — Legal Foundation</a>
   <a href="#part2">Part 2 — Wallet Setup</a>
   <a href="#part3">Part 3 — Cold Storage</a>
   <a href="#part4">Part 4 — Secure Comms</a>
@@ -334,11 +362,197 @@ footer{background:var(--bg-s);border-top:.5px solid var(--border-str);padding:2.
   </div>
 </div>
 
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- FOUNDATION — PLAIN LANGUAGE GLOSSARY -->
+<section id="foundation" class="gl-section">
+  <div class="section-header">
+    <span class="part-num">Foundation</span>
+    <h2 class="section-title">Plain Language — Every Term Explained</h2>
+  </div>
+  <p class="gl-intro">If you find yourself asking "what is a blockchain?" or "what does lawful mean?" — those are exactly the right questions. This section answers every foundational concept before you touch any technology. Read it once. You will not need to look elsewhere. The goal is simple: when you finish this section, you understand everything in this guide from first principles — not because someone told you to trust it, but because you understand why it works.</p>
+
+  <div class="gl-cat-title">The First Distinction — The Most Important One</div>
+  <div class="gl-law-block">
+    <div class="gl-law-col gl-law-a">
+      <div class="gl-law-head">Term One</div>
+      <div class="gl-law-term">Lawful</div>
+      <p class="gl-law-def">Lawful refers to what is recognized by natural law, equity, and inherent principles — foundational rights that exist independently of any government, statute, or institution. Something is lawful because it is grounded in those underlying principles: honest dealing, actual consent, demonstrable control. Lawful is not granted. It is recognized.</p>
+      <div class="gl-law-ex">Example: Your private keys give you exclusive control of a CER. That control is lawful because you demonstrably hold it — regardless of whether any government has issued you permission to hold it.</div>
+    </div>
+    <div class="gl-law-col gl-law-b">
+      <div class="gl-law-head">Term Two</div>
+      <div class="gl-law-term">Legal</div>
+      <p class="gl-law-def">Legal refers to what a specific statute, regulation, or government system permits or prohibits at a given moment. Something can be legal but not lawful (permitted by statute but violating fundamental rights) — or lawful but not yet codified in any statute. Legal changes when legislatures act. Lawful does not. Legal is issued. Lawful is inherent.</p>
+      <div class="gl-law-ex">Example: A government can make something illegal — but it cannot turn manufactured consent into actual consent simply by passing a statute. Your on-chain timestamp is a lawful fact regardless of what any statute says about it.</div>
+    </div>
+  </div>
+  <div class="def-block" style="margin-bottom:2.5rem">
+    <div class="def-label">Why This Guide Uses "Lawful" — Not "Legal"</div>
+    <p class="def-text">This guide operates at the level of what is lawful. Your Qualified Purchaser status arises from possession of exclusive control under UCC §12-105 — not from any government's permission to hold it. The blockchain records lawful facts: timestamps, hashes, control. No jurisdiction can retroactively make those facts untrue. By grounding your status in what is lawful, you position yourself above jurisdictional disputes — because the underlying facts exist independently of any statute.</p>
+  </div>
+
+  <div class="gl-cats">
+
+    <div>
+      <div class="gl-cat-title">Sovereign Foundation</div>
+      <div class="gl-cards">
+        <div class="gl-card gl-full">
+          <span class="gl-term-tag">Treaty</span>
+          <div class="gl-q">What is the Treaty with the Delawares, 1778?</div>
+          <p class="gl-a">The Treaty with the Delawares — also called the Treaty of Fort Pitt — is the <em>first formal treaty</em> between the United States and a Native American nation, signed September 17, 1778. It established a legal relationship and rights of successorship between the Lenape (Delaware) people and the United States government. This treaty was never abrogated — it remains operative under federal law. Thoroughbred LLC's designation as a Tribal Government Entity invokes this treaty framework. The significance is standing: sovereign entities operating under treaty frameworks hold standing that is <em>outside and above ordinary commercial law</em> — the same register required for sovereign-to-sovereign transactions. The Treaty establishes that standing. You cannot enter this transaction in a purely commercial capacity. The standing must match the register.</p>
+          <div class="gl-note">Cited at 7 Stat. 13. Recognized by federal courts as establishing enduring sovereign rights that were never extinguished.</div>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">UCC Article 12</span>
+          <div class="gl-q">What is a Controllable Electronic Record?</div>
+          <p class="gl-a">A Controllable Electronic Record (CER) is a digital asset that satisfies the control standard in UCC §12-105 — meaning one person has the exclusive power to benefit from it, exclude others from it, and transfer it. When you hold the private keys controlling the wallet holding a CER, you hold the CER. The law recognizes that control as property — and a Qualifying Purchaser takes that property free of all prior claims.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">UCC Article 12</span>
+          <div class="gl-q">What is a Qualified Purchaser?</div>
+          <p class="gl-a">The highest grade of digital asset holder under US commercial law. You become a Qualified Purchaser by acquiring a CER for value, in good faith, and without notice of competing claims. The moment you do, UCC §12-104(e) operates automatically: all prior property claims in that CER are extinguished. Not subordinated — extinguished. No filing required. No court order required. Operation of law.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="gl-cat-title">Blockchain — What It Is and Why It Matters</div>
+      <div class="gl-cards">
+        <div class="gl-card gl-full">
+          <span class="gl-term-tag">Core Concept</span>
+          <div class="gl-q">What is a blockchain?</div>
+          <p class="gl-a">A blockchain is a <em>ledger</em> — a record of transactions — maintained simultaneously by thousands of independent computers around the world, rather than by any single organization. Every transaction is grouped into a block and added to a chain of prior blocks, creating a permanent, ordered history. Once written, a block cannot be altered without changing every block that came after it — which would require controlling more than half of all computers on the network simultaneously. No government, bank, or corporation controls it. Anyone can read it. <em>No one can erase it.</em> That immutability is not a feature — it is the architecture. The Divine Registry anchors your lawful status here precisely because the record cannot be rewritten by anyone who would benefit from doing so.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Network</span>
+          <div class="gl-q">What is Ethereum?</div>
+          <p class="gl-a">Ethereum is a blockchain that does more than record transfers of value — it also runs programs called smart contracts. Those programs live permanently on the chain and execute automatically when their conditions are met, without any human intermediary. The FLAME Protocol ETR, all ENS domains, and the Divine Registry are built on Ethereum. Its native currency (used to pay transaction fees) is called ETH or Ether.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Infrastructure</span>
+          <div class="gl-q">What is a node?</div>
+          <p class="gl-a">A node is one of thousands of computers worldwide that each hold a complete copy of the Ethereum blockchain and independently verify every new transaction. Because nodes are owned by different people in different countries, no government or court can shut down the network by targeting one location. Your transaction is not stored somewhere — it is stored <em>everywhere the network exists simultaneously.</em></p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Programs on Chain</span>
+          <div class="gl-q">What is a smart contract?</div>
+          <p class="gl-a">A smart contract is a program stored permanently on the blockchain. It runs automatically when its conditions are met — no human operator, intermediary, or authority needed. Once deployed, it cannot be changed: not by its creator, not by a court order, not by a government. The Divine Registry's verification, the FLAME Protocol ETR, and ENS are all smart contracts. When a CER transfers to a Qualifying Purchaser, the transfer executes because the contract's conditions were satisfied — not because any institution approved it.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Technical</span>
+          <div class="gl-q">What is a transaction hash?</div>
+          <p class="gl-a">A unique identifier for a specific transaction on the blockchain — a long hexadecimal string starting with 0x. Enter it into <a href="https://etherscan.io" target="_blank">etherscan.io</a> and you see the full details: what was sent, from where, to where, at exactly what time, and in which block. Transaction hashes are permanent, immutable proof that a specific action occurred at a specific moment.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Fees</span>
+          <div class="gl-q">What is gas?</div>
+          <p class="gl-a">Gas measures the computational work required to execute a transaction or run a smart contract on Ethereum. Every operation costs a small amount of gas, paid in ETH. Gas fees fluctuate with network congestion. Registering an ENS domain, setting text records, and transferring assets all require gas. Budget USD 30–60 of ETH for your initial setup.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="gl-cat-title">Wallets, Keys, and Control</div>
+      <div class="gl-cards">
+        <div class="gl-card">
+          <span class="gl-term-tag">Foundation of Control</span>
+          <div class="gl-q">What is a private key?</div>
+          <p class="gl-a">A private key is a large random number — 256 bits — that controls a wallet address. It is generated locally on your device and never transmitted anywhere. It authorizes every transaction you sign. <em>Anyone who has your private key controls your address.</em> There is no password reset. There is no customer support. There is only the key — and the seed phrase that regenerates it.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Public Identity</span>
+          <div class="gl-q">What is a wallet address?</div>
+          <p class="gl-a">Your wallet address is a public identifier derived mathematically from your private key — but the reverse cannot be done. It is safe to share. It is how others send assets to you, how you appear on block explorers, and how the Divine Registry identifies your wallet. Sharing your address reveals nothing about your private key.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">The Only Backup</span>
+          <div class="gl-q">What is a seed phrase?</div>
+          <p class="gl-a">A seed phrase is 12 or 24 ordinary English words that encode your wallet's master secret in human-readable form. It regenerates all of your keys. Anyone who has these words has complete control of your wallet. Write it on paper. Store it offline. Never photograph it. Never type it anywhere except the wallet setup screen. <em>Losing it means permanent loss of access. There is no recovery.</em></p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Architecture</span>
+          <div class="gl-q">What is a deterministic wallet?</div>
+          <p class="gl-a">A deterministic wallet generates all of its private keys from a single master seed. "Deterministic" means mathematically predictable: given the same seed, the same keys are always generated in the same order. You only need to back up one thing — the seed phrase — to recover every key the wallet has ever generated or will ever generate. MetaMask and Ledger are both deterministic wallets.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Architecture</span>
+          <div class="gl-q">What is an HD wallet?</div>
+          <p class="gl-a">An HD (Hierarchical Deterministic) wallet extends the deterministic concept by organizing keys in a tree structure. From one master seed you derive unlimited accounts, each with unlimited addresses, in a predictable hierarchy. One 12-word or 24-word seed phrase recovers every key you have ever used across every account. This is the architecture used by MetaMask, Ledger, and Trezor.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Institutional Security</span>
+          <div class="gl-q">What is a multi-signature wallet?</div>
+          <p class="gl-a">A multi-signature wallet requires approval from multiple private keys before any transaction executes. A 3-of-5 Safe requires any 3 of 5 designated signers to approve before funds move. If one key is compromised, the attacker still cannot act alone. For institutions, multi-sig is the technical implementation of organizational controls — multiple officers must authorize any significant action. This satisfies the exclusivity requirement of UCC §12-105(B) at institutional scale.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Cold Storage</span>
+          <div class="gl-q">What is a hardware wallet?</div>
+          <p class="gl-a">A physical device — like a Ledger or Trezor — that stores private keys in a secure chip that never connects to the internet. When you sign a transaction, the transaction goes to the device, is signed inside the secure chip, and the signed result is returned — without the private key ever leaving the device. This is cold storage. For institutional Qualified Purchasers, cold storage signing is required to satisfy the exclusivity requirement of UCC §12-105(B).</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Interface</span>
+          <div class="gl-q">What is MetaMask?</div>
+          <p class="gl-a">MetaMask is a browser extension and mobile app that functions as a wallet interface — letting you connect to Ethereum applications, manage addresses, sign transactions, and interact with ENS. For individuals, a MetaMask wallet with a properly secured seed phrase is sufficient. For institutions, MetaMask connects to a Safe multi-sig. Download only from <a href="https://metamask.io" target="_blank">metamask.io</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="gl-cat-title">Sovereign Identity and Permanent Storage</div>
+      <div class="gl-cards">
+        <div class="gl-card">
+          <span class="gl-term-tag">On-Chain Identity</span>
+          <div class="gl-q">What is ENS — the Ethereum Name Service?</div>
+          <p class="gl-a">ENS is a naming system built on Ethereum that maps human-readable names (yourname.eth) to wallet addresses, content hashes, and text records. It works like the internet's domain system (DNS) but is decentralized and censorship-resistant. Your ENS domain cannot be seized or modified without access to your private keys. It is your permanent, sovereign identity on Ethereum — and the anchor point for your Divine Registry status on divinelife.eth.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Ownership</span>
+          <div class="gl-q">What is an NFT in the context of ENS?</div>
+          <p class="gl-a">Your ENS domain (yourname.eth) is an ERC-721 NFT — a unique digital asset held in your wallet. Unlike fungible tokens (where one unit is identical to another), each ENS domain is unique and individually owned. Owning the NFT means you control the domain. No central authority can revoke it. The annual renewal fee keeps the registration active — miss it and the domain expires and becomes available for re-registration.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Distributed Storage</span>
+          <div class="gl-q">What is IPFS?</div>
+          <p class="gl-a">IPFS (InterPlanetary File System) is a peer-to-peer file storage protocol that identifies files by their content — not their location. Instead of a URL pointing to a company's server, IPFS generates a CID — a cryptographic fingerprint — from the file's contents. If the content changes, the CID changes. Files are distributed across many nodes worldwide. No single company controls it.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Proof</span>
+          <div class="gl-q">What is a CID (Content Identifier)?</div>
+          <p class="gl-a">A CID is the cryptographic fingerprint of a file stored on IPFS — generated directly from the file's contents. If a single byte of the file changes, the CID changes completely. The CID stored in your ENS content hash record is immutable proof that those exact documents existed on that exact date, unchanged. Any auditor, court, or counterparty can verify this independently without asking anyone for permission.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Permanence</span>
+          <div class="gl-q">What is Arweave?</div>
+          <p class="gl-a">Arweave is a blockchain-based storage protocol providing permanent, one-time-payment storage. Once uploaded, your data is guaranteed accessible for a minimum of 200 years by the network's economic design. No company shutdown, no unpaid bill, no legal process directed at any single provider can remove it. For legal records that must be verifiable for decades — or centuries — Arweave is the appropriate medium. It is the difference between a record and a permanent record.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Proof of Documents</span>
+          <div class="gl-q">What is a data hex string?</div>
+          <p class="gl-a">Your complete document package represented as a hexadecimal string — characters 0–9 and A–F encoding every byte of your documents. Any change to any document changes the hex string entirely. Stored directly in your ENS text record, it creates a self-contained verifiable proof of your lawful package that requires no external gateway to verify — the hash can be recomputed from the documents and compared directly.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Secure Communications</span>
+          <div class="gl-q">What is Session?</div>
+          <p class="gl-a">Session is a decentralized, end-to-end encrypted messenger requiring no phone number, storing no metadata, and routing communications through an onion network — no central server can be compelled to produce message content or user identity. The Divine Registry uses Session exclusively for all private communications, including private key delivery and registry attestation. Download at <a href="https://getsession.org" target="_blank">getsession.org</a>.</p>
+        </div>
+        <div class="gl-card">
+          <span class="gl-term-tag">Pinning Service</span>
+          <div class="gl-q">What is Pinata?</div>
+          <p class="gl-a">Pinata is an IPFS pinning service — it ensures your files remain available on the IPFS network by committing to keep a copy accessible. Without pinning, IPFS files may be removed when no node actively holds them. Pinata is the most reliable pinning service at institutional scale. It is the first layer of storage redundancy. Arweave is the permanent second layer that no service provider can revoke.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- PART 1 — LEGAL FOUNDATION -->
 <section id="part1" class="section">
   <div class="section-header">
     <span class="part-num">Part 1</span>
-    <h2 class="section-title">The Qualified Purchaser Legal Foundation — UCC Article 12</h2>
+    <h2 class="section-title">The Qualified Purchaser Lawful Foundation — UCC Article 12</h2>
   </div>
   <p class="section-lead">Before touching any technology, understand why this works. A Qualified Purchaser under UCC Article 12 holds the highest grade of digital asset control available in US commercial law. This status arises from possession of exclusive control — not from a filing, a registration, or a government permission. Your status is proved by the keys you hold.</p>
 

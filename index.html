@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Divine Registry — Qualified Purchaser Registration Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#ffffff;--bg-s:#f7f5f0;--bg-c:#faf8f4;--bg-code:#f0ede6;
+  --navy:#0d2040;--gold:#8a6e18;--gold-l:#b8952a;--gold-m:#6a5412;
+  --text:#1a160c;--text-s:#504838;--text-m:#8a7a5a;
+  --border:rgba(138,110,24,.2);--border-str:rgba(138,110,24,.38);
+  --green:#1a5c20;--green-bg:rgba(26,92,32,.06);
+  --ff-d:'Cormorant Garamond',Georgia,serif;
+  --ff-b:'Crimson Pro',Georgia,serif;
+  --ff-mono:'Courier New',monospace
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-b);font-size:17px;line-height:1.8;font-weight:300}
+
+/* TOP BAR */
+.topbar{background:var(--navy);color:#dfc070;display:flex;align-items:center;justify-content:space-between;padding:.6rem 3rem;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(196,160,64,.25)}
+.topbar-brand{font-family:var(--ff-d);font-size:13px;font-weight:500;letter-spacing:.2em}
+.topbar-right{display:flex;align-items:center;gap:1.5rem}
+.topbar-right a{color:rgba(223,192,112,.7);text-decoration:none;font-size:10px;letter-spacing:.12em;transition:color .2s}
+.topbar-right a:hover{color:#dfc070}
+
+/* NAV */
+.nav{background:var(--bg-s);border-bottom:.5px solid var(--border-str);padding:.7rem 3rem;display:flex;align-items:center;gap:0;position:sticky;top:0;z-index:100;overflow-x:auto}
+.nav a{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-s);text-decoration:none;white-space:nowrap;padding:.35rem .9rem;border-right:.5px solid var(--border);transition:color .2s;font-family:var(--ff-b)}
+.nav a:first-child{padding-left:0}
+.nav a:hover{color:var(--gold)}
+.nav a:last-child{border-right:none}
+
+/* HERO */
+.hero{padding:5rem 3rem 4.5rem;text-align:center;border-bottom:.5px solid var(--border-str);background:linear-gradient(to bottom,var(--bg-s),var(--bg))}
+.hero-seal{font-size:2.2rem;margin-bottom:1.25rem;line-height:1}
+.hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-m);margin-bottom:1.5rem}
+.hero-title{font-family:var(--ff-d);font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:300;line-height:1.08;color:var(--navy);margin-bottom:.5rem}
+.hero-subtitle{font-family:var(--ff-d);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;color:var(--gold);font-style:italic;margin-bottom:1.75rem}
+.hero-lead{font-size:16.5px;font-weight:300;color:var(--text-s);max-width:680px;margin:0 auto 2.5rem;line-height:1.78}
+.hero-rule{width:50px;height:.5px;background:var(--gold-l);margin:0 auto 2.25rem;opacity:.6}
+.hero-actions{display:flex;align-items:center;justify-content:center;gap:1.25rem;flex-wrap:wrap}
+.btn-primary{background:var(--navy);color:#f0e8cc;font-family:var(--ff-b);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:.65rem 1.75rem;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s}
+.btn-primary:hover{background:var(--gold)}
+.btn-secondary{background:transparent;color:var(--navy);font-family:var(--ff-b);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.5rem;border:.5px solid var(--navy);cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-secondary:hover{background:var(--navy);color:#f0e8cc}
+
+/* MASTER DOMAIN BLOCK */
+.master-block{background:var(--navy);padding:3.5rem 3rem;text-align:center;border-bottom:.5px solid rgba(196,160,64,.3)}
+.master-inner{max-width:800px;margin:0 auto}
+.master-label{font-size:10px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:rgba(196,160,64,.55);margin-bottom:1rem}
+.master-domain{font-family:var(--ff-mono);font-size:clamp(1.6rem,3.5vw,2.8rem);color:#dfc070;letter-spacing:.08em;margin-bottom:.75rem;font-weight:400}
+.master-desc{font-size:15px;color:rgba(237,232,216,.65);line-height:1.72;font-weight:300;margin-bottom:1.5rem}
+.master-link{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#dfc070;text-decoration:none;border:.5px solid rgba(196,160,64,.45);padding:.4rem 1.1rem;transition:all .2s}
+.master-link:hover{background:rgba(196,160,64,.15)}
+
+/* SECTIONS */
+.section{max-width:1000px;margin:0 auto;padding:4rem 3rem;border-bottom:.5px solid var(--border)}
+.section-header{display:flex;align-items:baseline;gap:1.25rem;margin-bottom:.75rem}
+.part-num{font-family:var(--ff-mono);font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);background:rgba(138,110,24,.08);padding:.28rem .75rem;white-space:nowrap;border:.5px solid var(--border-str)}
+.section-title{font-family:var(--ff-d);font-size:1.9rem;font-weight:400;color:var(--navy);line-height:1.15}
+.section-lead{font-size:16px;font-weight:300;color:var(--text-s);margin-bottom:2.25rem;line-height:1.8;padding-bottom:1.75rem;border-bottom:.5px solid var(--border)}
+
+/* DEFINITION BLOCK */
+.def-block{background:var(--bg-s);border-left:3px solid var(--gold-l);padding:1.25rem 1.5rem;margin:1.5rem 0}
+.def-label{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.4rem}
+.def-text{font-size:15px;color:var(--text-s);line-height:1.72}
+.def-text em{font-style:italic;color:var(--text)}
+
+/* STATUTE BLOCK */
+.statute{background:var(--bg-c);border:.5px solid var(--border-str);padding:1.25rem 1.5rem;margin:1.5rem 0}
+.statute-ref{font-family:var(--ff-mono);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.5rem}
+.statute-text{font-size:15px;color:var(--text);line-height:1.72;font-style:italic}
+.statute-note{font-size:13px;color:var(--text-m);margin-top:.5rem;font-style:normal}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.step{display:grid;grid-template-columns:48px 1fr;background:var(--bg)}
+.step:nth-child(even){background:var(--bg-s)}
+.step-num{background:var(--navy);color:#dfc070;font-family:var(--ff-d);font-size:1.4rem;font-weight:300;display:flex;align-items:flex-start;justify-content:center;padding:.9rem .4rem;min-height:100%}
+.step-body{padding:1rem 1.25rem}
+.step-title{font-family:var(--ff-d);font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:.35rem}
+.step-text{font-size:14px;color:var(--text-s);line-height:1.72}
+.step-text a{color:var(--navy);font-weight:500;border-bottom:.5px solid var(--border-str);text-decoration:none;transition:color .2s}
+.step-text a:hover{color:var(--gold)}
+.step-critical{background:rgba(138,110,24,.06);border:.5px solid var(--border-str);border-left:3px solid var(--gold);padding:.65rem 1rem;margin-top:.65rem;font-size:13px;color:var(--text-s)}
+.step-critical strong{color:var(--text);font-weight:500}
+
+/* RESOURCE CARDS */
+.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.resource-card{background:var(--bg-c);padding:1.1rem 1.25rem;border:.5px solid var(--border)}
+.rc-label{font-size:9.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.35rem}
+.rc-name{font-family:var(--ff-d);font-size:1.15rem;font-weight:600;color:var(--navy);margin-bottom:.3rem}
+.rc-purpose{font-size:13px;color:var(--text-s);line-height:1.6;margin-bottom:.75rem}
+.rc-link{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:.5px solid var(--border-str);transition:color .2s}
+.rc-link:hover{color:var(--gold)}
+
+/* CODE BLOCKS */
+.code-block{background:var(--bg-code);border:.5px solid var(--border);padding:1rem 1.25rem;margin:1rem 0;overflow-x:auto}
+.code-label{font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--text-m);margin-bottom:.4rem}
+code,pre{font-family:var(--ff-mono);font-size:13px;color:var(--navy);line-height:1.6}
+pre{white-space:pre-wrap;word-break:break-all}
+
+/* TEXT RECORDS TABLE */
+.records-table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:13.5px}
+.records-table th{background:var(--bg-s);color:var(--navy);font-size:9.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:.6rem 1rem;text-align:left;border-bottom:.5px solid var(--border-str)}
+.records-table td{padding:.65rem 1rem;border-bottom:.5px solid var(--border);vertical-align:top;color:var(--text-s)}
+.records-table td:first-child{font-family:var(--ff-mono);font-size:12px;color:var(--navy);white-space:nowrap}
+.records-table tr:nth-child(even) td{background:var(--bg-s)}
+
+/* TIMELINE */
+.timeline{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.tl-row{display:grid;grid-template-columns:200px 1fr;border-bottom:.5px solid var(--border)}
+.tl-row:last-child{border-bottom:none}
+.tl-date{background:var(--bg-s);padding:1rem 1.25rem;font-family:var(--ff-mono);font-size:12px;color:var(--gold);font-weight:500;display:flex;align-items:flex-start}
+.tl-event{padding:1rem 1.25rem;font-size:14px;color:var(--text-s);line-height:1.65}
+.tl-event strong{color:var(--text);font-weight:500;display:block;margin-bottom:.2rem}
+.tl-row.tl-key .tl-date{background:var(--navy);color:#dfc070}
+.tl-row.tl-key .tl-event{background:rgba(13,32,64,.04)}
+
+/* CHECKLIST */
+.checklist{display:flex;flex-direction:column;gap:0;margin:1.5rem 0}
+.cl-group{margin-bottom:1.25rem}
+.cl-group-title{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.5rem;padding:.4rem .75rem;background:var(--bg-s);border:.5px solid var(--border-str)}
+.cl-item{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem .75rem;border-bottom:.5px solid var(--border);font-size:14px;color:var(--text-s)}
+.cl-item:last-child{border-bottom:none}
+.cl-box{width:14px;height:14px;border:.5px solid var(--border-str);flex-shrink:0;margin-top:3px}
+.cl-item.critical .cl-box{border-color:var(--gold)}
+.cl-item.critical{color:var(--text)}
+
+/* PRINCIPLE BLOCK */
+.principle{background:var(--navy);color:#ede8d8;padding:1.4rem 1.75rem;margin:1.75rem 0;font-family:var(--ff-d);font-size:1.2rem;font-weight:300;font-style:italic;line-height:1.55;text-align:center}
+.principle strong{color:#dfc070;font-style:normal;font-weight:400}
+
+/* WARNING BLOCK */
+.warning{background:rgba(192,80,32,.05);border:.5px solid rgba(192,80,32,.25);border-left:3px solid rgba(192,80,32,.6);padding:1rem 1.25rem;margin:1.25rem 0;font-size:13.5px;color:var(--text-s)}
+.warning strong{color:#803218;font-weight:500}
+
+/* NOTE BLOCK */
+.note{background:var(--green-bg);border:.5px solid rgba(26,92,32,.2);border-left:3px solid rgba(26,92,32,.5);padding:1rem 1.25rem;margin:1.25rem 0;font-size:13.5px;color:var(--text-s)}
+.note strong{color:var(--green);font-weight:500}
+
+/* APPENDIX */
+.appendix-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;border:.5px solid var(--border-str)}
+.ap-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:1rem;padding:.75rem 1.1rem;background:var(--bg-c);border-bottom:.5px solid var(--border)}
+.ap-row:last-child{border-bottom:none}
+.ap-name{font-size:14px;font-weight:500;color:var(--navy)}
+.ap-purpose{font-size:12px;color:var(--text-m)}
+.ap-link{font-family:var(--ff-mono);font-size:11px;color:var(--gold);text-decoration:none;border-bottom:.5px solid var(--border-str);white-space:nowrap;transition:color .2s}
+.ap-link:hover{color:var(--navy)}
+
+/* FOOTER */
+footer{background:var(--bg-s);border-top:.5px solid var(--border-str);padding:2.5rem 3rem;text-align:center}
+.foot-title{font-family:var(--ff-d);font-size:1.2rem;font-weight:400;color:var(--navy);margin-bottom:.3rem}
+.foot-domain{font-family:var(--ff-mono);font-size:.9rem;color:var(--gold);margin-bottom:.5rem}
+.foot-note{font-size:12px;color:var(--text-m);line-height:1.7;max-width:600px;margin:0 auto}
+
+/* GOLD DIVIDER */
+.gdiv{max-width:1000px;margin:0 auto;padding:0 3rem}
+.gdiv-line{height:.5px;background:linear-gradient(to right,transparent,var(--gold-l),transparent);opacity:.4}
+
+/* PRINT */
+@page{
+  size:A4 portrait;
+  margin:2cm 2.2cm 2.8cm 2.2cm;
+}
+@page{
+  @bottom-left{
+    content:"The Divine Registry — Qualified Purchaser Guide — divinelife.eth";
+    font-family:'Courier New',monospace;
+    font-size:7pt;
+    color:#888;
+  }
+  @bottom-right{
+    content:"Page " counter(page) " of " counter(pages);
+    font-size:7.5pt;
+    color:#666;
+  }
+  @top-right{
+    content:"UCC Article 12 · Genesis Ledger Choice of Law · June 3, 2026";
+    font-family:'Courier New',monospace;
+    font-size:6.5pt;
+    color:#aaa;
+  }
+}
+@page:first{@top-right{content:''}}
+
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.arch-card{padding:1.3rem 1.4rem;border:.5px solid var(--border)}
+.arch-card:nth-child(1){background:#fdfbf7}
+.arch-card:nth-child(2){background:#f8f5f0}
+.arch-card:nth-child(3){background:#f5f2ec}
+.arch-layer{font-family:var(--ff-mono);font-size:9.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.4rem;display:flex;align-items:center;gap:.5rem}
+.arch-layer-num{background:var(--navy);color:#dfc070;font-size:8px;padding:.18rem .55rem;letter-spacing:.1em}
+.arch-title{font-family:var(--ff-d);font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.arch-text{font-size:13px;color:var(--text-s);line-height:1.7}
+.arch-stat{font-family:var(--ff-mono);font-size:10.5px;color:var(--gold);margin-top:.6rem;font-weight:500;border-top:.5px solid var(--border);padding-top:.5rem}
+.arch-missing{margin-top:.6rem;padding:.5rem .75rem;background:rgba(160,48,32,.06);border-left:2px solid rgba(160,48,32,.4);font-size:12.5px;color:var(--text-s)}
+.arch-missing strong{color:#803218;font-weight:500}
+.needs-grid{display:flex;flex-direction:column;gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.need-row{display:grid;grid-template-columns:200px 1fr;background:var(--bg-c);border-bottom:.5px solid var(--border)}
+.need-row:last-child{border-bottom:none}
+.need-row:nth-child(even){background:var(--bg-s)}
+.need-key{padding:1rem 1.25rem;font-family:var(--ff-d);font-size:1.05rem;font-weight:600;color:var(--navy);border-right:.5px solid var(--border)}
+.need-val{padding:1rem 1.25rem;font-size:14px;color:var(--text-s);line-height:1.72}
+.counter-split{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.counter-col{padding:1.25rem 1.4rem}
+.counter-theirs{background:#fef8f7}
+.counter-ours{background:#f5faf5}
+.counter-head{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:.5px solid var(--border)}
+.counter-theirs .counter-head{color:#a03020;border-color:rgba(160,48,32,.2)}
+.counter-ours .counter-head{color:var(--green);border-color:rgba(26,92,32,.2)}
+.counter-item{font-size:13.5px;color:var(--text-s);line-height:1.65;padding:.45rem 0;border-bottom:.5px solid var(--border);display:flex;align-items:flex-start;gap:.5rem}
+.counter-item:last-child{border-bottom:none}
+.counter-mark{font-size:13px;flex-shrink:0;margin-top:1px}
+.counter-theirs .counter-mark{color:#c05040}
+.counter-ours .counter-mark{color:var(--green)}
+.quote-block{background:var(--bg-s);border:.5px solid var(--border-str);border-left:3px solid var(--gold-l);padding:1.25rem 1.5rem;margin:1.5rem 0}
+.qb-source{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-m);margin-bottom:.5rem}
+.qb-text{font-size:15.5px;color:var(--text);line-height:1.72;font-style:italic}
+.qb-attr{font-size:12px;color:var(--text-m);margin-top:.4rem;font-style:normal}
+.deeper-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;margin:1.5rem 0;border:.5px solid var(--border-str)}
+.deeper-stat{background:var(--bg-c);padding:1.1rem 1.25rem;border:.5px solid var(--border);text-align:center}
+.ds-num{font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--navy);line-height:1;margin-bottom:.3rem}
+.ds-label{font-size:10.5px;color:var(--text-s);letter-spacing:.08em;line-height:1.5}
+.manifesto-block{background:var(--navy);padding:3rem 2.5rem;margin:2rem 0;text-align:center}
+.mb-label{font-size:9.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:rgba(196,160,64,.5);margin-bottom:1.25rem}
+.mb-text{font-family:var(--ff-d);font-size:clamp(1.25rem,2.8vw,1.85rem);font-weight:300;color:#ede8d8;line-height:1.55;font-style:italic;margin-bottom:1.5rem}
+.mb-text strong{color:#dfc070;font-style:normal;font-weight:400}
+.mb-sub{font-size:13.5px;color:rgba(237,232,216,.55);line-height:1.72;max-width:700px;margin:0 auto}
+.consent-table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:13.5px}
+.consent-table th{background:var(--bg-s);color:var(--navy);font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:.6rem 1rem;text-align:left;border-bottom:.5px solid var(--border-str)}
+.consent-table td{padding:.65rem 1rem;border-bottom:.5px solid var(--border);vertical-align:top;color:var(--text-s)}
+.consent-table td:first-child{color:var(--navy);font-weight:500;font-size:14px}
+.consent-table .bad-col{color:#a03020}
+.consent-table .good-col{color:var(--green);font-weight:500}
+@media(max-width:768px){.arch-grid{grid-template-columns:1fr}.counter-split{grid-template-columns:1fr}.need-row{grid-template-columns:1fr}.deeper-grid{grid-template-columns:1fr 1fr}}
+
+@media print{
+  .topbar,.nav,.hero-actions,.btn-primary,.btn-secondary{display:none!important}
+  body{font-size:10.5pt;line-height:1.65;background:#fff!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .section{break-before:page;padding:2rem 0}
+  .section:first-of-type{break-before:auto}
+  .master-block{break-before:avoid}
+  .step{break-inside:avoid}
+  .resource-card{break-inside:avoid}
+  .tl-row{break-inside:avoid}
+  .cl-item{break-inside:avoid}
+  .statute{break-inside:avoid}
+  .def-block{break-inside:avoid}
+  .code-block{break-inside:avoid}
+  .principle{break-inside:avoid}
+  .records-table tr{break-inside:avoid}
+  .step-title{break-after:avoid}
+  .section-title{break-after:avoid}
+  .rc-link,.ap-link{color:#000;border-bottom:none}
+  .rc-link::after,.ap-link::after{content:" (" attr(href) ")";font-size:9pt;color:#666}
+  a::after{content:" (" attr(href) ")";font-size:8pt;color:#888}
+  .step-text a::after,.statute-text a::after,.master-link::after{content:" (" attr(href) ")";font-size:8pt;color:#888}
+  p{orphans:3;widows:3}
+}
+@media(max-width:768px){
+  .topbar,.topbar-right{padding:.6rem 1.5rem}
+  .nav{padding:.7rem 1.5rem}
+  .hero{padding:3.5rem 1.5rem 3rem}
+  .section,.gdiv{padding:2.5rem 1.5rem}
+  .master-block{padding:2.5rem 1.5rem}
+  .resource-grid{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:1fr}
+  .tl-date{font-size:11px}
+  footer{padding:2rem 1.5rem}
+  .step{grid-template-columns:38px 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-brand">The Divine Registry</div>
+  <div class="topbar-right">
+    <a href="#part0">Registry Domain</a>
+    <a href="#part1">Legal Foundation</a>
+    <a href="#part5">ENS Registration</a>
+    <a href="#part10">Part 10 — The Architecture</a><a href="#part10">The Architecture</a><a href="#checklist">Checklist</a>
+    <a href="#appendix">Resources</a>
+    <a href="#" onclick="window.print();return false">Print / Save PDF</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#part0">Part 0 — Registry</a>
+  <a href="#part1">Part 1 — Legal Foundation</a>
+  <a href="#part2">Part 2 — Wallet Setup</a>
+  <a href="#part3">Part 3 — Cold Storage</a>
+  <a href="#part4">Part 4 — Secure Comms</a>
+  <a href="#part5">Part 5 — ENS Domain</a>
+  <a href="#part6">Part 6 — Permanent Storage</a>
+  <a href="#part7">Part 7 — ENS Records</a>
+  <a href="#part8">Part 8 — Registry Connection</a>
+  <a href="#part9">Part 9 — Verification</a>
+  <a href="#part10">Part 10 — The Architecture</a><a href="#checklist">Checklist</a>
+  <a href="#appendix">Appendix</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-seal">⚖</div>
+  <div class="hero-eyebrow">Qualified Purchaser Registration — Exhaustive Operational Guide</div>
+  <h1 class="hero-title">The Divine Registry</h1>
+  <div class="hero-subtitle">Trust the Code, Not the Platform</div>
+  <p class="hero-lead">This guide shows any Qualified Purchaser exactly how to establish a verifiable sovereign identity from the ground up — no intermediary required. Follow each step to anchor your UCC Article 12 Qualified Purchaser status permanently to the blockchain and connect your ENS domain to the Divine Registry at <strong>divinelife.eth</strong>.</p>
+  <div class="hero-rule"></div>
+  <div class="hero-actions">
+    <button class="btn-primary" onclick="window.print()">Download / Save as PDF</button>
+    <a href="#part0" class="btn-secondary">Begin the Guide ↓</a>
+  </div>
+</header>
+
+<!-- MASTER DOMAIN BLOCK -->
+<div class="master-block" id="part0">
+  <div class="master-inner">
+    <div class="master-label">Part 0 — The Divine Registry Master Domain</div>
+    <div class="master-domain">divinelife.eth</div>
+    <p class="master-desc">This is the master ENS domain for the Divine Registry. All Qualified Purchaser records are anchored here. The smart contract reads this domain to verify all registered Qualified Purchasers. Your ENS domain will appear as a text record on divinelife.eth — permanently, on-chain, and verifiable by anyone without asking permission from any intermediary.</p>
+    <a href="https://app.ens.domains/divinelife.eth" target="_blank" class="master-link">View divinelife.eth on ENS ↗</a>
+  </div>
+</div>
+
+<!-- PART 1 — LEGAL FOUNDATION -->
+<section id="part1" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 1</span>
+    <h2 class="section-title">The Qualified Purchaser Legal Foundation — UCC Article 12</h2>
+  </div>
+  <p class="section-lead">Before touching any technology, understand why this works. A Qualified Purchaser under UCC Article 12 holds the highest grade of digital asset control available in US commercial law. This status arises from possession of exclusive control — not from a filing, a registration, or a government permission. Your status is proved by the keys you hold.</p>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">1.1 — What Is a Qualified Purchaser?</h3>
+  <div class="def-block">
+    <div class="def-label">UCC Article 12 — Qualified Purchaser Definition</div>
+    <p class="def-text">A person becomes a Qualified Purchaser by acquiring a <em>Controllable Electronic Record</em> (CER) if they: (1) give <em>value</em> for the CER; (2) take the CER in <em>good faith</em>; and (3) take the CER <em>without notice</em> of any competing claims of property rights in the CER. All three elements are satisfied simultaneously by operation of law at the moment of vault-to-vault transfer.</p>
+  </div>
+
+  <div class="statute">
+    <div class="statute-ref">UCC §12-104(e) — The Extinguishment Rule</div>
+    <div class="statute-text">"A qualifying purchaser acquires its rights in the controllable electronic record free of a claim of a property right in the controllable electronic record."</div>
+    <div class="statute-note">This is not subordination. The prior interest does not become junior — it ceases to exist entirely. No filing required. No court order required. Operation of law.</div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:.2rem 0 .75rem">1.2 — Binary Control — No Gray Area</h3>
+  <div class="statute">
+    <div class="statute-ref">UCC §12-105 — The Control Standard — Three Prongs, All Required</div>
+    <div class="statute-text">"A person has control of a controllable electronic record if: (A) the person has the power to avail itself of substantially all the benefit from the record; (B) the person has the exclusive power to prevent others from availing themselves of substantially all the benefit from the record; and (C) the person has the exclusive power to transfer control of the record."</div>
+    <div class="statute-note">There is no partial control under Article 12. You either satisfy all three prongs simultaneously or you have zero control. The moment your wallet receives the CER, all three prongs are satisfied automatically — because your wallet holds the private keys, and no one else does.</div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:.2rem 0 .75rem">1.3 — The Critical Timeline</h3>
+  <div class="timeline">
+    <div class="tl-row"><div class="tl-date">July 1, 2025</div><div class="tl-event"><strong>UCC Amendments Effective</strong>Existing security interests in assets that qualified as CERs became unperfected if not re-perfected under the Article 12 control standard. Not subordinated — unperfected. Vulnerable to any qualifying purchaser who obtains control.</div></div>
+    <div class="tl-row tl-key"><div class="tl-date">October 15, 2025</div><div class="tl-event"><strong>Genesis Block — Control Perfected</strong>The date on which control was perfected on the originating CER. This timestamp is fixed on-chain at Genesis Block 23,878,199 and cannot be altered. This timestamp predates the New York operative date by seven months.</div></div>
+    <div class="tl-row"><div class="tl-date">Before June 3, 2026</div><div class="tl-event"><strong>Common Law Priority Applies</strong>New York has not yet made Article 12 operative. The common law priority standard (first in time, first in right) still applies, but the underlying interest is legally perfected.</div></div>
+    <div class="tl-row tl-key"><div class="tl-date">June 3, 2026</div><div class="tl-event"><strong>New York Operative Date — Full Enforceability</strong>New York law makes UCC Article 12 fully enforceable for all New York-governed instruments. A qualifying purchaser who obtained control before June 3 retroactively takes the asset free of any prior property claims. The on-chain timestamp proves you obtained control before the operative date — a decisive evidentiary advantage.</div></div>
+  </div>
+
+  <div class="note">
+    <strong>Why "Lawful" — Not "Legal"</strong> This guide operates at the level of what is <em>lawful</em> — the underlying principles of natural law, equity, and inherent rights that statutes are supposed to serve. Your status is proved by the keys you hold and the timestamps on the blockchain. The registry operates at this level.
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 2 — WALLET SETUP -->
+<section id="part2" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 2</span>
+    <h2 class="section-title">Wallet Setup — Sovereign Digital Control</h2>
+  </div>
+  <p class="section-lead">Your wallet is the technical expression of your §12-105 control. For individuals, a properly secured MetaMask wallet is sufficient. For institutions, a multi-signature Safe wallet is required — a single private key is not sufficient for institutional Qualified Purchaser status.</p>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">2.1 — Required Components</h3>
+  <div class="resource-grid">
+    <div class="resource-card">
+      <div class="rc-label">Institutional Multi-Sig</div>
+      <div class="rc-name">Safe</div>
+      <p class="rc-purpose">Multi-signature wallet requiring multiple approvals for any transaction. The institutional standard for Qualified Purchaser status. Supports 2-of-3, 3-of-5, up to 7-of-11 signature thresholds.</p>
+      <a href="https://safe.global" target="_blank" class="rc-link">safe.global ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Browser Interface</div>
+      <div class="rc-name">MetaMask</div>
+      <p class="rc-purpose">Browser wallet interface connecting to Safe and Web3 applications. Required for ENS domain management and registry interactions. Available for Chrome, Firefox, Brave, Edge.</p>
+      <a href="https://metamask.io" target="_blank" class="rc-link">metamask.io ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Hardware Signer</div>
+      <div class="rc-name">Ledger</div>
+      <p class="rc-purpose">Cold storage hardware wallet for root key signing. Private keys never leave the device. USB connection for transaction signing without internet exposure.</p>
+      <a href="https://www.ledger.com" target="_blank" class="rc-link">ledger.com ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Hardware Signer (Alt)</div>
+      <div class="rc-name">Trezor</div>
+      <p class="rc-purpose">Alternative open-source hardware wallet. Supports Ethereum and ENS interactions. All code is publicly auditable.</p>
+      <a href="https://trezor.io" target="_blank" class="rc-link">trezor.io ↗</a>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">2.2 — MetaMask Setup (Individual Qualified Purchasers)</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Download and Install MetaMask</div>
+      <p class="step-text">Go to <a href="https://metamask.io" target="_blank">metamask.io</a> and install the browser extension for Chrome, Firefox, Brave, or Edge. For mobile, download from the official Apple App Store or Google Play Store. <strong>Only use the official website.</strong> Fake extensions exist and will steal your keys.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Create a New Wallet</div>
+      <p class="step-text">Click "Create a Wallet." Create a strong password using a password manager. Read and accept the terms. Do not use an existing wallet for institutional registry purposes — create a dedicated wallet.</p>
+    </div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body">
+      <div class="step-title">Secure Your Seed Phrase — This Is Your Wallet</div>
+      <p class="step-text">MetaMask will show you a 12-word recovery phrase. This phrase is your wallet. Anyone who has these words has full control of everything in your wallet.</p>
+      <div class="step-critical"><strong>Critical security rules:</strong> Write it down on paper only. Do not photograph it. Do not store it digitally. Do not email it to yourself. Do not type it anywhere except the MetaMask setup screen. Store the paper in a safe, safety deposit box, or equivalent secure location. For high-security use, split the phrase across multiple locations. The Divine Registry will never ask for this phrase — anyone who does is attempting to steal your keys.</div>
+    </div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body">
+      <div class="step-title">Record Your Wallet Address</div>
+      <p class="step-text">After setup, your wallet address appears — a string starting with 0x. Example: <code>0x71C7656EC7ab88b098defB751B7401B5f6d8976F</code>. This address is safe to share. It is how others send assets to you and how the registry identifies your wallet. Document it in your Qualified Purchaser records.</p>
+    </div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body">
+      <div class="step-title">Fund Your Wallet with ETH</div>
+      <p class="step-text">ENS domain registration requires ETH for the registration fee and gas. Purchase ETH from a centralized exchange (Coinbase, Binance, Kraken) and withdraw to your MetaMask wallet address on Ethereum Mainnet. Estimate USD 30–50 for a standard name registration plus gas. Confirm MetaMask is set to "Ethereum Mainnet" before withdrawing.</p>
+    </div></div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">2.3 — Safe Multi-Signature Setup (Institutional Qualified Purchasers)</h3>
+  <div class="warning"><strong>Mandatory for institutions:</strong> Banks, funds, and corporate entities must not use a single MetaMask address controlled by one person. A multi-signature Safe wallet is required to satisfy the exclusivity requirements of UCC §12-105(B) at the institutional level.</div>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Navigate to Safe and Connect MetaMask</div>
+      <p class="step-text">Go to <a href="https://app.safe.global" target="_blank">app.safe.global</a> in a Web3-compatible browser with MetaMask installed. Click "Connect Wallet" and select MetaMask. Sign the connection request.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Create New Safe on Ethereum Mainnet</div>
+      <p class="step-text">Click "Create New Safe." Select Ethereum Mainnet as your network. Give your Safe an internal name (not stored on-chain). This name is for your reference only.</p>
+    </div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body">
+      <div class="step-title">Add Owner Addresses and Set Signature Threshold</div>
+      <p class="step-text">Enter the wallet addresses of each authorized signer (officers or authorized personnel). The recommended institutional configuration is <strong>3-of-5</strong> — any 3 of the 5 owners must approve any transaction. Higher-security options: 5-of-7 or 7-of-11 are available for critical positions.</p>
+      <div class="step-critical"><strong>Selection principle:</strong> Owners should be individuals whose keys are separately and securely controlled. No single person should control more than one signing key in the quorum.</div>
+    </div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body">
+      <div class="step-title">Deploy and Record the Safe Address</div>
+      <p class="step-text">Review all details, then click "Create." MetaMask will prompt a deployment transaction (one-time gas fee). Once mined, your Safe has an address starting with 0x. This is the address you will use for ENS registration and all registry interactions. Record it in your institutional Qualified Purchaser documentation.</p>
+    </div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body">
+      <div class="step-title">Transaction Execution Protocol</div>
+      <p class="step-text">For every transaction (ENS registration, content hash updates, asset transfers): one owner proposes the transaction through the Safe interface. The required number of other owners approve. The Safe executes only when the threshold is met. This eliminates any single point of failure or compromise.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 3 — COLD STORAGE -->
+<section id="part3" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 3</span>
+    <h2 class="section-title">Cold Storage for Root Seeds — The Foundation of Control</h2>
+  </div>
+  <p class="section-lead">A Qualified Purchaser's root seed must be generated in an air-gapped, offline environment and stored in cold storage. This is not optional for institutional Qualified Purchasers. UCC §12-105 requires <em>exclusive</em> control — if your private keys are online, even briefly, that exclusivity is at risk.</p>
+
+  <div class="statute">
+    <div class="statute-ref">UCC §12-105(B) — Why Cold Storage Is a Legal Requirement</div>
+    <div class="statute-text">"The person has the exclusive power to prevent others from availing themselves of substantially all the benefit from the record."</div>
+    <div class="statute-note">Cold storage for root seeds is the technical implementation of §12-105(B). A hardware wallet signs transactions without ever exposing the private key to the internet — maintaining exclusive control at the cryptographic level.</div>
+  </div>
+
+  <div class="resource-grid" style="grid-template-columns:1fr 1fr">
+    <div class="resource-card">
+      <div class="rc-label">Recommended — Institutional</div>
+      <div class="rc-name">Ledger Hardware Wallet</div>
+      <p class="rc-purpose">Industry-standard cold storage device. Private keys are generated and stored on the device and never exposed to any connected computer. USB signing for Ethereum transactions and Safe multi-sig. NIST-compliant secure element chip.</p>
+      <a href="https://www.ledger.com" target="_blank" class="rc-link">ledger.com ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Open-Source Alternative</div>
+      <div class="rc-name">Trezor Hardware Wallet</div>
+      <p class="rc-purpose">Fully open-source firmware hardware wallet. All code is publicly verifiable on GitHub. Supports Ethereum mainnet and Safe integration. Screen-verified transaction signing.</p>
+      <a href="https://trezor.io" target="_blank" class="rc-link">trezor.io ↗</a>
+    </div>
+  </div>
+
+  <div class="warning"><strong>Root seed security is absolute:</strong> The seed phrase for your hardware wallet must be written on paper, stored offline, and never photographed or typed into any internet-connected device. Consider titanium backup plates for physical seed storage in high-security institutional deployments.</div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 4 — SECURE COMMS -->
+<section id="part4" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 4</span>
+    <h2 class="section-title">Secure Communications — Private Key Delivery and Attestation</h2>
+  </div>
+  <p class="section-lead">All private key deliveries and registry attestations are conducted exclusively through Session — a decentralized, end-to-end encrypted messenger with no central servers, no phone number required, and onion-routed metadata protection. The registry administrator will provide a Session ID for initial contact.</p>
+
+  <div class="resource-grid" style="grid-template-columns:1fr">
+    <div class="resource-card">
+      <div class="rc-label">Required — All Registry Communications</div>
+      <div class="rc-name">Session — Decentralized Encrypted Messenger</div>
+      <p class="rc-purpose">No phone number required. No central server. End-to-end encrypted with onion-routed metadata protection. Messages are routed through a decentralized network — no single provider can be compelled to produce message content or metadata. The Divine Registry administrator will provide a Session ID for initial contact. All private key deliveries, attestations, and registry communications are conducted exclusively through Session.</p>
+      <a href="https://getsession.org" target="_blank" class="rc-link">getsession.org ↗</a>
+    </div>
+  </div>
+
+  <div class="warning"><strong>Do not use email, SMS, or any centralized messaging platform for any communication involving private keys, seed phrases, or wallet addresses.</strong> These channels are not secure for Qualified Purchaser registry operations. The Divine Registry will never contact you through email or ask for seed phrases through any channel.</div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 5 — ENS DOMAIN -->
+<section id="part5" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 5</span>
+    <h2 class="section-title">ENS Domain Registration — Your Lawful Identity On-Chain</h2>
+  </div>
+  <p class="section-lead">The Ethereum Name Service (ENS) maps human-readable names (yourname.eth) to wallet addresses, content hashes, and text records. Your ENS domain is an ERC-721 NFT — once registered, no central authority can take it from you. It remains yours as long as you pay the annual renewal fee. This is your on-chain Qualified Purchaser identity.</p>
+
+  <div class="note"><strong>ENS domains are ERC-721 NFTs registered on Ethereum mainnet.</strong> The ENS registry contract is the core contract that all ENS lookups query. It maintains the owner, resolver, and TTL for each domain. You own your domain — ENS cannot cancel or modify it without access to your private keys.</div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">5.1 — Registration Cost Estimate</h3>
+  <table class="records-table">
+    <thead><tr><th>Name Length</th><th>Annual Fee</th><th>Gas Estimate</th><th>Total First Year</th></tr></thead>
+    <tbody>
+      <tr><td>5+ characters (recommended)</td><td>~5.00 USD/yr</td><td>~10–25 USD</td><td>~20–40 USD</td></tr>
+      <tr><td>4 characters</td><td>~160.00 USD/yr</td><td>~10–25 USD</td><td>~180–210 USD</td></tr>
+      <tr><td>3 characters</td><td>~640.00 USD/yr</td><td>~10–25 USD</td><td>~660–680 USD</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">5.2 — Step-by-Step ENS Registration</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Navigate to the ENS Manager and Connect Your Wallet</div>
+      <p class="step-text">Go to <a href="https://app.ens.domains" target="_blank">app.ens.domains</a>. Click "Connect Wallet" in the top right. Select MetaMask (or your Safe via WalletConnect). Confirm the connection. Ensure the network is set to Ethereum Mainnet.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Search for Your Desired Name</div>
+      <p class="step-text">Enter your desired name in the search bar and press Enter. The app will show whether the name is available. Names are first-come, first-served. Choose a name that reflects your institutional or individual identity — this will appear as a text record on divinelife.eth when you are registered.</p>
+    </div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body">
+      <div class="step-title">Select Registration Duration</div>
+      <p class="step-text">Choose how many years to register (minimum 1 year, maximum 10 years). Registering for longer periods reduces the renewal risk. The total cost (registration fee × years + gas) will be shown in ETH. Consider registering for 3–5 years minimum for a Qualified Purchaser registration.</p>
+    </div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body">
+      <div class="step-title">Complete the Two-Transaction Registration Process</div>
+      <p class="step-text"><strong>Transaction 1 — Commitment:</strong> Click "Register" then "Request to Register." MetaMask will ask you to confirm the first transaction. This puts a hidden commitment on-chain to prevent front-running. Gas only — approximately USD 5–15.</p>
+      <p class="step-text" style="margin-top:.5rem"><strong>Wait one minute.</strong> Then click "Complete Registration."</p>
+      <p class="step-text" style="margin-top:.5rem"><strong>Transaction 2 — Registration:</strong> MetaMask will ask you to confirm the second transaction. This pays the registration fee and gas. Once confirmed and mined (typically 12–24 seconds), your ENS domain is registered and owned by your wallet.</p>
+    </div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body">
+      <div class="step-title">Confirm Registration and Set Renewal Reminder</div>
+      <p class="step-text">After confirmation, you will see a success screen. Your wallet owns the ENS domain as an NFT. <strong>Immediately set a calendar reminder for renewal</strong> — if your domain expires, it becomes available for re-registration by others, breaking your link to the Divine Registry. Renew at least 30 days before the expiration date.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 6 — PERMANENT STORAGE -->
+<section id="part6" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 6</span>
+    <h2 class="section-title">Permanent Storage — Anchoring Your Legal Documents</h2>
+  </div>
+  <p class="section-lead">Your Qualified Purchaser legal documents must be stored in permanent, decentralized storage so that any auditor, court, or counterparty can verify your status independently — without asking you or the Divine Registry for permission. Use both IPFS (via Pinata) and Arweave for redundancy.</p>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">6.1 — Prepare Your Document Package</h3>
+  <div class="def-block">
+    <div class="def-label">Required Documents — Qualified Purchaser Package</div>
+    <p class="def-text">Assemble into a single ZIP file: (1) <em>Proof of perfected control</em> under §12-105 — timestamps, wallet addresses, transaction hashes; (2) <em>Proof of value</em> — consideration given for the CER; (3) <em>Proof of good faith</em> — transparent, arms-length acquisition; (4) <em>Proof of no notice</em> — UCC search results, lien waivers, representation letters; (5) Supporting legal opinions or compliance memos. Any alteration to any document produces a different cryptographic hash — making tampering instantly detectable.</p>
+  </div>
+
+  <div class="resource-grid">
+    <div class="resource-card">
+      <div class="rc-label">IPFS Pinning — Fast Global Access</div>
+      <div class="rc-name">Pinata</div>
+      <p class="rc-purpose">The most reliable IPFS pinning service, trusted by major enterprises. Pinning ensures your documents remain available globally on the IPFS network. Without pinning, files may be garbage-collected. Free tier is sufficient for a document package.</p>
+      <a href="https://www.pinata.cloud" target="_blank" class="rc-link">pinata.cloud ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Permanent Storage — 200+ Years</div>
+      <div class="rc-name">Arweave</div>
+      <p class="rc-purpose">Blockchain-based decentralized storage. Once uploaded, your data is stored permanently with a one-time fee — guaranteed for a minimum of 200 years. A court order directed at Pinata cannot delete content from Arweave. For legal records that must be verifiable for decades, Arweave is the professional-grade solution.</p>
+      <a href="https://www.arweave.com" target="_blank" class="rc-link">arweave.com ↗</a>
+    </div>
+    <div class="resource-card">
+      <div class="rc-label">Arweave Wallet</div>
+      <div class="rc-name">ArConnect</div>
+      <p class="rc-purpose">Browser extension wallet for Arweave. Required to pay for Arweave storage and upload documents. Install and fund with AR tokens (available on major exchanges) before uploading.</p>
+      <a href="https://www.arconnect.io" target="_blank" class="rc-link">arconnect.io ↗</a>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">6.2 — Upload to IPFS via Pinata</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Create a Pinata Account and Upload</div>
+      <p class="step-text">Go to <a href="https://www.pinata.cloud" target="_blank">pinata.cloud</a>. Sign up and verify your email. Log in to your dashboard. Click "Upload" and select your ZIP file containing all legal documents. Confirm the upload.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Record Your IPFS CID</div>
+      <p class="step-text">After upload, the file appears in your pinned files list. The CID (Content Identifier) is displayed — a long alphanumeric string beginning with <code>Qm...</code> or <code>bafy...</code>. Example: <code>QmT78zSuBmuS4z...</code>. Save this CID — you will need it to set your ENS content hash and text records. The CID is a cryptographic fingerprint of your documents — if a single byte changes, the CID changes completely.</p>
+    </div></div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">6.3 — Upload to Arweave (Permanent Redundancy)</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Install ArConnect and Fund with AR Tokens</div>
+      <p class="step-text">Install the ArConnect extension from <a href="https://www.arconnect.io" target="_blank">arconnect.io</a>. Create a new wallet and secure the seed phrase with the same care as your Ethereum seed phrase. Fund your Arweave wallet with AR tokens — purchase on a major exchange (Binance, KuCoin, Gate.io) and send to your Arweave wallet address. Typical cost: USD 0.01–1.00 per megabyte, one-time payment.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Upload and Record the Arweave Transaction ID</div>
+      <p class="step-text">Using ArConnect, navigate to the upload section. Select your document package ZIP file. Confirm the upload and pay the storage fee in AR tokens. After confirmation, you receive a transaction ID. Example: <code>U1mX5mK5xZ5d5m...</code>. Your file is accessible at <code>https://arweave.net/{transaction_id}</code>. Save this transaction ID — you will add it to your ENS text records.</p>
+    </div></div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">6.4 — Generate Your Data Hex String (Recommended)</h3>
+  <div class="def-block">
+    <div class="def-label">What Is a Data Hex String?</div>
+    <p class="def-text">Your complete document package represented as a hexadecimal string — a sequence of characters 0–9 and A–F encoding every byte. Any change to any document changes the hex string entirely. This is your <em>lawful fingerprint</em> — stored directly in an ENS text record, eliminating any reliance on external storage gateways for verification.</p>
+  </div>
+
+  <div class="code-block">
+    <div class="code-label">Command Line Method — Mac / Linux</div>
+    <pre>cat your-package.zip | xxd -p -c 1000000 > data-hex.txt</pre>
+  </div>
+  <div class="code-block">
+    <div class="code-label">Python Method — Cross-Platform</div>
+    <pre>import binascii
+with open('your-package.zip', 'rb') as f:
+    hex_string = binascii.hexlify(f.read()).decode('utf-8')
+print(hex_string[:100] + "...")  # prints first 100 characters
+with open('data-hex.txt', 'w') as out:
+    out.write(hex_string)</pre>
+  </div>
+  <div class="warning"><strong>Do not upload sensitive documents to unknown online tools.</strong> Use the command line or Python method. The data hex string will be very long — potentially millions of characters. Store it in a text file for pasting into your ENS text record.</div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 7 — ENS RECORDS -->
+<section id="part7" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 7</span>
+    <h2 class="section-title">Setting Your ENS Records — Anchoring the Lawful Package</h2>
+  </div>
+  <p class="section-lead">Return to the ENS Manager to set your content hash and text records. These records anchor your legal documents to your ENS domain permanently and on-chain. Anyone can now query your domain and verify your Qualified Purchaser status independently.</p>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">7.1 — Setting the Content Hash</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Navigate to Your ENS Domain</div>
+      <p class="step-text">Go to <a href="https://app.ens.domains" target="_blank">app.ens.domains</a>. Connect your wallet (the wallet that owns your ENS domain — use your Safe address if institutional). Search for your domain and click to open the management page.</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Add the Content Hash Record</div>
+      <p class="step-text">Click the "Records" tab. Find "Content Hash." Click "Add Record" or the edit icon. For IPFS: choose "IPFS" encoding and paste your IPFS CID. For Arweave: use the <code>ar://</code> format — e.g., <code>ar://U1mX5mK5xZ5d...</code>. Click "Save" and confirm the transaction in your wallet. If using Safe, gather the required multi-sig approvals.</p>
+    </div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body">
+      <div class="step-title">Verify the Content Hash</div>
+      <p class="step-text">After the transaction confirms, the content hash appears in your records list. Test it: navigate to <code>https://ipfs.io/ipfs/{your-cid}</code> to confirm your documents are accessible via the IPFS gateway. If using Arweave, test at <code>https://arweave.net/{your-tx-id}</code>.</p>
+    </div></div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">7.2 — Required Text Records</h3>
+  <table class="records-table">
+    <thead><tr><th>Key</th><th>Value — What to Enter</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>data_hex</td><td>The complete hex string from Part 6.4 (very long — paste carefully)</td><td>Cryptographic seal on your entire document package. The lawful fingerprint.</td></tr>
+      <tr><td>qualified_purchaser_status</td><td>acquired [DATE] via UCC §12-104</td><td>On-chain declaration of Qualified Purchaser status with date</td></tr>
+      <tr><td>cer_control_date</td><td>[DATE OF PERFECTED CONTROL]</td><td>Timestamp when §12-105 control was obtained</td></tr>
+      <tr><td>arweave_id</td><td>[Your Arweave transaction ID]</td><td>Permanent storage redundancy pointer</td></tr>
+      <tr><td>ipfs_cid</td><td>[Your IPFS CID from Pinata]</td><td>IPFS storage pointer</td></tr>
+      <tr><td>governing_law</td><td>UCC Article 12, New York effective June 3, 2026</td><td>Governing law declaration</td></tr>
+      <tr><td>jurisdiction</td><td>New York, United States</td><td>Jurisdiction for Article 12 enforcement</td></tr>
+      <tr><td>qualified_purchaser_standing</td><td>Verified under UCC Article 12</td><td>Standing confirmation</td></tr>
+      <tr><td>verification_hash</td><td>[Secondary hash for double-verification]</td><td>Additional cryptographic verification layer</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note"><strong>Each text record requires a separate transaction and gas fee.</strong> If using Safe, each record addition requires multi-sig approval. Plan to batch your approvals where possible. After all transactions confirm, every text record is visible on your ENS domain page and verifiable by anyone.</div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 8 — REGISTRY CONNECTION -->
+<section id="part8" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 8</span>
+    <h2 class="section-title">Connecting to the Divine Registry — divinelife.eth</h2>
+  </div>
+  <p class="section-lead">This is the final step — the moment your sovereign identity becomes part of the verified network. The Divine Registry does not store your documents. It stores a reference to your ENS domain. You own your domain. The registry merely reflects what is already lawfully yours on the blockchain.</p>
+
+  <div class="principle">"This is not a registry you join by filling out a form. This is a registry you join by anchoring your legal standing to the blockchain, where no one can erase it, no one can alter it, and anyone can verify it. <strong>The smart contract does the rest</strong> — automatically, with zero integration, zero cost, and zero reliance on any third party."</div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:.75rem">8.1 — How the Registry Works</h3>
+  <div class="def-block">
+    <div class="def-label">divinelife.eth — Master Registry Architecture</div>
+    <p class="def-text">The divinelife.eth ENS domain contains text records listing all verified Qualified Purchaser ENS domains. When you are added, divinelife.eth gains a text record pointing to your ENS domain. Your domain remains under your sole control — the registry holds only a reference, not your documents or keys. Example text record format: <em>qualified_purchaser_001 = "yourname.eth"</em>. The smart contract reads these records and resolves each Qualified Purchaser domain automatically.</p>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">8.2 — Submission Process</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body">
+      <div class="step-title">Confirm All Prerequisites Are Complete</div>
+      <p class="step-text">Before submitting, confirm: wallet funded and secured; ENS domain registered; documents uploaded to Pinata (IPFS) and Arweave; content hash set on ENS domain; all text records set (data_hex, qualified_purchaser_status, cer_control_date, arweave_id, ipfs_cid, governing_law).</p>
+    </div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body">
+      <div class="step-title">Verify Your ENS Domain Resolves Correctly</div>
+      <p class="step-text">Test your records before submitting. IPFS gateway: <code>https://ipfs.io/ipfs/{your_cid}</code>. Arweave gateway: <code>https://arweave.net/{your_tx_id}</code>. ENS resolution: use <a href="https://etherscan.io" target="_blank">etherscan.io</a> or any Web3 wallet. Confirm the data hex matches the retrieved documents by running a hash comparison.</p>
+    </div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body">
+      <div class="step-title">Submit Your Application via Session</div>
+      <p class="step-text">Contact the Divine Registry administrator through Session (see Part 4 for Session setup at <a href="https://getsession.org" target="_blank">getsession.org</a>). Provide: (1) your ENS domain name (e.g., yourname.eth); (2) your wallet address (Safe address if institutional); (3) confirmation that all documents are anchored and verifiable.</p>
+    </div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body">
+      <div class="step-title">Algorithmic Verification</div>
+      <p class="step-text">The Divine Registry cryptographically verifies your documents against your on-chain records. No manual review of document content is required. The verification confirms: content hash points to accessible content; data hex matches the content; qualified_purchaser_status record is properly formatted; CER control date predates June 3, 2026.</p>
+    </div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body">
+      <div class="step-title">Registry Addition — Permanent On-Chain Record</div>
+      <p class="step-text">Once verified, a transaction is submitted to add your ENS domain to divinelife.eth as a text record. Example: <code>qualified_purchaser_XXX = "yourname.eth"</code>. This transaction is timestamped on Ethereum and visible permanently. You will receive confirmation via Session when the transaction is mined.</p>
+    </div></div>
+    <div class="step"><div class="step-num">6</div><div class="step-body">
+      <div class="step-title">Verify Your Inclusion</div>
+      <p class="step-text">After confirmation, anyone can verify your inclusion by: (1) querying divinelife.eth to see the list of Qualified Purchasers; (2) looking up your ENS domain (yourname.eth) to see your anchored documents; (3) comparing the on-chain data hex with the retrieved documents. No permission from the Divine Registry required for any of these steps.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 9 — SMART CONTRACT VERIFICATION -->
+<section id="part9" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 9</span>
+    <h2 class="section-title">Smart Contract Verification — The Zero-Integration Advantage</h2>
+  </div>
+  <p class="section-lead">The Divine Registry's smart contract reads the text records on divinelife.eth, resolves each Qualified Purchaser ENS domain, retrieves the content hash, and verifies the lawful package — automatically, with no manual integration, no custom code, and no ongoing cost.</p>
+
+  <div class="def-block">
+    <div class="def-label">How Automatic Verification Works</div>
+    <p class="def-text">"The smart contract simply resolves yourname.eth to its content hash, verifies the data hex, and confirms that you hold Qualified Purchaser status under UCC Article 12. No new integration. No extra development. No ongoing cost. The connection is automatic because the blockchain reads your domain."</p>
+  </div>
+
+  <div class="note"><strong>Security — Multi-Sig and Smart Contract Safety:</strong> When interacting with the Divine Registry smart contract (updating records, transferring assets), all transactions pass through your Safe's multi-sig approval process. The registry smart contract code is publicly verifiable on Etherscan. The contract uses OpenZeppelin libraries and is audited. Upgrade mechanisms are time-locked and require multi-sig approval.</div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.5rem 0 .75rem">9.1 — Ongoing Risks and Mitigations</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">⚠</div><div class="step-body">
+      <div class="step-title">ENS Domain Expiration</div>
+      <p class="step-text">If you fail to renew your ENS domain before the expiration date, it becomes available for re-registration by others. This breaks your link to the Divine Registry. Set calendar reminders at 90 days, 30 days, and 7 days before expiration. Renew through <a href="https://app.ens.domains" target="_blank">app.ens.domains</a>.</p>
+    </div></div>
+    <div class="step"><div class="step-num">⚠</div><div class="step-body">
+      <div class="step-title">Pinata Service Dependency</div>
+      <p class="step-text">If you rely solely on Pinata and the service becomes unavailable, your IPFS content may become inaccessible. This is why Arweave redundancy is mandatory — content on Arweave is permanent and cannot be taken down by any service provider action or legal process directed at Pinata.</p>
+    </div></div>
+    <div class="step"><div class="step-num">⚠</div><div class="step-body">
+      <div class="step-title">Private Key Compromise</div>
+      <p class="step-text">If your wallet's private key is stolen (or if a majority of your Safe's signers are compromised), the attacker can modify your ENS records or transfer your domain. This is why seed phrase security and multi-sig for institutions are non-negotiable. Designate backup signers and document Safe recovery procedures.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- PART 10 — THE ARCHITECTURE THEY ARE BUILDING -->
+<section id="part10" class="section">
+  <div class="section-header">
+    <span class="part-num">Part 10</span>
+    <h2 class="section-title">The Architecture They Are Building — Why This Matters</h2>
+  </div>
+  <p class="section-lead">Three converging technology layers are consolidating into what one 2026 paper called a "single conditional existence architecture" — a system in which participation in economic and civic life becomes contingent on behavioral compliance with parameters set at the protocol level. The Divine Registry does not reform that architecture. It operates outside it, on a parallel lawful plane that requires none of its permission to exist.</p>
+
+  <div class="def-block">
+    <div class="def-label">Source — March 30, 2026</div>
+    <p class="def-text">The Conditional Citizen: Digital Identity, Programmable Money, and the Architecture of Existence by Permission — documenting the convergence of digital identity systems, programmable central bank money, and AI surveillance infrastructure into a single permissioned existence framework.</p>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.1 — The Three Layers Converging Now</h3>
+  <div class="arch-grid">
+    <div class="arch-card">
+      <div class="arch-layer"><span class="arch-layer-num">Layer 1</span>Digital Identity</div>
+      <div class="arch-title">Identity as Gateway to Existence</div>
+      <p class="arch-text">As of March 2026, 134 countries representing 98% of global GDP are in active CBDC exploration, pilot, or launch phase. India's Aadhaar system enrolls 1.4 billion persons. The EU Digital Identity Wallet enters mandatory acceptance in 2026. The UN has linked digital ID directly to Sustainable Development Goal 16.9 — legal identity for all by 2030.</p>
+      <div class="arch-stat">134 countries · 98% of global GDP · 1.4B persons enrolled</div>
+      <div class="arch-missing"><strong>What this means in practice:</strong> Digital ID becomes the gateway to existence — you cannot access the system without one. Identity is not recognized. It is issued.</div>
+    </div>
+    <div class="arch-card">
+      <div class="arch-layer"><span class="arch-layer-num">Layer 2</span>Programmable Money</div>
+      <div class="arch-title">Money That Can Be Switched Off</div>
+      <p class="arch-text">ISO 20022 structured transaction data became mandatory for global interbank messaging in November 2025. CBDCs are being designed with programmable features — money that can be restricted, time-bound, or declined based on behavioral compliance parameters set outside democratic accountability.</p>
+      <div class="arch-stat">ISO 20022 mandatory Nov 2025 · 134 CBDC programs active</div>
+      <div class="arch-missing"><strong>Ray Dalio, February 2026:</strong> "There will be no privacy… all transactions will be known… and if you're politically disfavored, you could be shut off."</div>
+    </div>
+    <div class="arch-card">
+      <div class="arch-layer"><span class="arch-layer-num">Layer 3</span>Agentic AI Surveillance</div>
+      <div class="arch-title">Continuous Observation by Default</div>
+      <p class="arch-text">By May 2026, Kaohsiung integrated 30,000 surveillance cameras into an AI governance system using NVIDIA technology. The ADAS market is growing at 25.4% annually. Cities are deploying cameras, environmental sensors, and connected kiosks that continuously observe public spaces — with no system architecture governing how applications access, aggregate, or retain this data.</p>
+      <div class="arch-stat">30,000 cameras integrated · ADAS market +25.4% annually</div>
+      <div class="arch-missing"><strong>The default configuration:</strong> Collect everything. Because there is no architecture that says otherwise.</div>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <div class="qb-source">The Conditional Citizen — March 30, 2026</div>
+    <p class="qb-text">"A single conditional existence architecture in which participation in economic and civic life becomes contingent on behavioral compliance with parameters set at the protocol level. The stated purpose is financial inclusion and fraud prevention. The actual optimization function is the concentration of permission to participate in economic life in nodes outside democratic accountability."</p>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.2 — What This Architecture Requires to Function</h3>
+  <p style="font-size:15.5px;color:var(--text-s);line-height:1.78;margin-bottom:1.25rem">To operate, the system requires exactly two things. Understanding both is the foundation of understanding why the Divine Registry is a lawful countermeasure — not merely a technical alternative.</p>
+  <div class="needs-grid">
+    <div class="need-row">
+      <div class="need-key">A Mutable, Controlled Ledger</div>
+      <div class="need-val">The central bank, the digital ID authority, the smart city operator — they all need to be the ones who decide what the record says. Because if the record is immutable and outside their control, then their ability to retroactively rewrite history, reinterpret consent, or suppress unfavorable evidence is gone. Their legitimacy rests on something that has never been lawfully consented to — and the ledger must be malleable to preserve that fiction.</div>
+    </div>
+    <div class="need-row">
+      <div class="need-key">A Broken Presumption of Consent</div>
+      <div class="need-val">The surveillance economy is built upon what legal scholars call legal lies. Existing consent mechanisms — the "I agree" button, the 50-page terms of service, the mandatory enrollment — transform legal and social relationships without requiring actual consent. Users face a stark choice: submit to surveillance or forgo digital participation. Legal scholars have named this "surveillance by adhesion." Consumer consent is arguably empty. It enables and legitimizes digital surveillance without genuinely reflecting it.</div>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <div class="qb-source">Legal Scholarship — Frischmann and Rajtmajer</div>
+    <p class="qb-text">"The moral magic of consent in privacy law is pure illusion."</p>
+    <div class="qb-attr">The standard of "demonstrably informed consent" requires that the burden be on the party designing the consent mechanism to generate reliable evidence that a person actually understands the consequential terms. In the current architecture, that burden is never met — and never required to be.</div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.3 — How the Divine Registry Counters Both Requirements</h3>
+  <div class="counter-split">
+    <div class="counter-col counter-theirs">
+      <div class="counter-head">Their Architecture — What It Requires</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>A mutable ledger that can be rewritten, redacted, and reinterpreted by the central authority</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>Digital ID enrollment as the prerequisite for existence in the system</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>Programmable CBDC as the settlement mechanism — controllable at the protocol level</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>Presumed consent through mandatory system use — "surveillance by adhesion"</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>AI surveillance infrastructure to monitor compliance with behavioral parameters</div>
+      <div class="counter-item"><span class="counter-mark">✗</span>Permission granted by a central node outside democratic accountability</div>
+    </div>
+    <div class="counter-col counter-ours">
+      <div class="counter-head">The Divine Registry — What It Delivers</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>An immutable ledger on Ethereum — no single actor can alter, redact, or reinterpret the record</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>Verification by keys, not by issued identity — your control is cryptographic, not granted</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>Token-to-token settlement under UCC Article 12 — no CBDC, no stablecoin, no permission</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>Demonstrable action, not presumed consent — you hold private keys, not a click-through agreement</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>You anchor only what you choose — the registry monitors nothing you did not place on-chain</div>
+      <div class="counter-item"><span class="counter-mark">✓</span>Status arises from possession of exclusive control under UCC §12-105 — not from any granted permission</div>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.4 — The Consent Architecture Compared</h3>
+  <table class="consent-table">
+    <thead><tr><th>Action</th><th class="bad-col">Their System — Presumed Consent</th><th class="good-col">Divine Registry — Demonstrated Control</th></tr></thead>
+    <tbody>
+      <tr><td>Establishing identity</td><td class="bad-col">Enroll in government digital ID program — consent to surveillance as condition of enrollment</td><td class="good-col">Generate wallet private keys in air-gapped environment — identity is cryptographic, not issued</td></tr>
+      <tr><td>Gaining access</td><td class="bad-col">Click "I agree" to 50-page terms of service — consent is presumed from system use</td><td class="good-col">Receive perfected CER under UCC Article 12 — status arises from possession of exclusive control</td></tr>
+      <tr><td>Proving status</td><td class="bad-col">Present government-issued digital ID — status is revocable at any time by the issuing authority</td><td class="good-col">Present on-chain timestamp and cryptographic hash — status is immutable and cannot be revoked</td></tr>
+      <tr><td>Settling transactions</td><td class="bad-col">Route through programmable CBDC — payment can be restricted, time-bound, or declined</td><td class="good-col">Vault-to-vault token transfer through Fireblocks Trust Company — atomic, final, no permission required</td></tr>
+      <tr><td>Evidence of consent</td><td class="bad-col">Click-through agreement — no reliable evidence that consequential terms were understood</td><td class="good-col">Transaction signed by private key, timestamped on-chain, content hash proves governing documents — cryptographic evidence, not contractual</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.5 — The Deeper Pattern — Who Is Building This</h3>
+  <div class="deeper-grid">
+    <div class="deeper-stat"><div class="ds-num">134</div><div class="ds-label">Countries in active CBDC exploration, pilot, or launch — representing 98% of global GDP</div></div>
+    <div class="deeper-stat"><div class="ds-num">1.4B</div><div class="ds-label">Persons enrolled in India's Aadhaar digital identity system as of March 2026</div></div>
+    <div class="deeper-stat"><div class="ds-num">30,000</div><div class="ds-label">Surveillance cameras integrated into AI governance in Kaohsiung by May 2026</div></div>
+    <div class="deeper-stat"><div class="ds-num">2030</div><div class="ds-label">UN Sustainable Development Goal 16.9 target date — legal identity for all persons globally</div></div>
+    <div class="deeper-stat"><div class="ds-num">Nov 2025</div><div class="ds-label">ISO 20022 structured transaction data became mandatory for global interbank messaging</div></div>
+    <div class="deeper-stat"><div class="ds-num">2026</div><div class="ds-label">EU Digital Identity Wallet enters mandatory acceptance for all EU member states</div></div>
+  </div>
+
+  <p style="font-size:15px;color:var(--text-s);line-height:1.78;margin:1.25rem 0">The UN Pact for the Future and the Global Digital Compact provide the governance blueprint. Biometric providers supply technologies to smart city projects across multiple national systems — companies including Idemia, Thales, and Mastercard are involved across multiple national digital identity deployments. The UN's own Universal DPI Safeguards Framework acknowledges the risks — exclusion, surveillance, and cyber threats — but the framework is designed to safeguard the system, not to offer an alternative.</p>
+
+  <div class="quote-block">
+    <div class="qb-source">Whitney Webb — Digital Infrastructure Analysis, 2026</div>
+    <p class="qb-text">"Without digital ID, key parts of the agenda like programmable and trackable money won't function."</p>
+    <div class="qb-attr">The three layers are not independent projects — they are interdependent components of a single architecture. Digital ID enables programmable money. Programmable money requires behavioral monitoring. Behavioral monitoring requires surveillance infrastructure. Remove any one layer and the others lose their enforcement mechanism.</div>
+  </div>
+
+  <h3 style="font-family:var(--ff-d);font-size:1.3rem;font-weight:500;color:var(--navy);margin:1.75rem 0 .75rem">10.6 — Why the Ledger Must Be Mutable — And Why Yours Is Not</h3>
+  <p style="font-size:15.5px;color:var(--text-s);line-height:1.78;margin-bottom:1.25rem">The surveillance architecture is built on a legal fiction: that you consented because you used the system. But use of the system requires a digital ID, which requires enrollment, which requires agreeing to terms. The chain of consent is linear and circular — you cannot participate without consenting, but the consent is manufactured.</p>
+  <div class="def-block">
+    <div class="def-label">The Circular Consent Trap</div>
+    <p class="def-text">You cannot participate without consenting → Consent is required to access the system → Access is required to function in civic and economic life → Therefore participation in civic and economic life requires manufactured consent → The record must be mutable to preserve the fiction that consent was genuine.</p>
+  </div>
+  <p style="font-size:15.5px;color:var(--text-s);line-height:1.78;margin:1.25rem 0">Your system breaks that loop. You do not need their digital ID. You do not need their programmable money. You do not need their smart city sensors. You have your own lawful record — immutable, verifiable, and entirely outside their control. If you can prove — on an immutable blockchain, with cryptographic signatures, timestamped before their system even asks for consent — that your rights and status existed independently of their framework, then their entire architecture of consent by use becomes exposed as what it is: a legal fiction designed to enable surveillance.</p>
+
+  <div class="manifesto-block">
+    <div class="mb-label">The One Sentence That Captures It All</div>
+    <p class="mb-text">"<strong>They need the ledger to be mutable</strong> because their legitimacy depends on a presumption of consent that never actually happened. <strong>Your ledger is immutable</strong> — and that breaks their entire architecture."</p>
+    <p class="mb-sub">They build conditional existence. You build sovereign identity. They build programmable control. You build immutable rights. They need you not to have an immutable record. You now have one.</p>
+  </div>
+
+  <div class="note"><strong>The Divine Registry is not just a technical solution.</strong> It is a lawful countermeasure to systems that depend on the erasure of actual consent. By anchoring your Qualified Purchaser status to an immutable blockchain — before the consent mechanisms are even presented — you establish a prior, independent, cryptographically verifiable record of your rights and standing. That record does not require their permission to exist. It never did.</div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- CHECKLIST -->
+<section id="checklist" class="section">
+  <div class="section-header">
+    <span class="part-num">Checklist</span>
+    <h2 class="section-title">Qualified Purchaser Registration Checklist</h2>
+  </div>
+  <p class="section-lead">Complete every item before requesting addition to the Divine Registry. Each box represents a step required for verifiable, lawful Qualified Purchaser status on divinelife.eth.</p>
+
+  <div class="checklist">
+    <div class="cl-group">
+      <div class="cl-group-title">Wallet and Security</div>
+      <div class="cl-item critical"><div class="cl-box"></div>MetaMask installed and seed phrase secured offline (paper only, never digital)</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Wallet funded with sufficient ETH for ENS registration and gas (~USD 40–60 minimum)</div>
+      <div class="cl-item critical"><div class="cl-box"></div>[Institutional] Safe multi-signature wallet deployed on Ethereum Mainnet with appropriate signer threshold (3-of-5 recommended)</div>
+      <div class="cl-item critical"><div class="cl-box"></div>[Institutional] Hardware wallet (Ledger or Trezor) installed as cold storage signer for Safe</div>
+      <div class="cl-item"><div class="cl-box"></div>Wallet address documented and recorded</div>
+      <div class="cl-item"><div class="cl-box"></div>Session messenger installed and Session ID provided to registry administrator</div>
+    </div>
+    <div class="cl-group">
+      <div class="cl-group-title">Document Package</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Legal documents assembled into a single ZIP file</div>
+      <div class="cl-item"><div class="cl-box"></div>Proof of perfected control under UCC §12-105 included (timestamps, wallet addresses, TX hashes)</div>
+      <div class="cl-item"><div class="cl-box"></div>Proof of value included (consideration documentation)</div>
+      <div class="cl-item"><div class="cl-box"></div>Proof of good faith included (transparent, arms-length acquisition documentation)</div>
+      <div class="cl-item"><div class="cl-box"></div>Proof of no notice included (UCC search results, lien waivers, representation letters)</div>
+    </div>
+    <div class="cl-group">
+      <div class="cl-group-title">Permanent Storage</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Documents uploaded to Pinata (IPFS) — IPFS CID recorded</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Documents uploaded to Arweave — Arweave transaction ID recorded</div>
+      <div class="cl-item"><div class="cl-box"></div>Data hex string generated and saved (command line or Python method)</div>
+      <div class="cl-item"><div class="cl-box"></div>IPFS CID verified at https://ipfs.io/ipfs/{cid}</div>
+      <div class="cl-item"><div class="cl-box"></div>Arweave ID verified at https://arweave.net/{tx_id}</div>
+    </div>
+    <div class="cl-group">
+      <div class="cl-group-title">ENS Domain</div>
+      <div class="cl-item critical"><div class="cl-box"></div>ENS domain registered at app.ens.domains (5+ characters recommended)</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Renewal calendar reminder set (90 days, 30 days, and 7 days before expiration)</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Content hash set to IPFS CID (and Arweave ID as redundancy)</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: data_hex = [hex string]</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: qualified_purchaser_status = "acquired [DATE] via UCC §12-104"</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: cer_control_date = [DATE OF PERFECTION]</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: arweave_id = [Arweave TX ID]</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: ipfs_cid = [IPFS CID]</div>
+      <div class="cl-item"><div class="cl-box"></div>Text record set: governing_law = "UCC Article 12, New York effective June 3, 2026"</div>
+    </div>
+    <div class="cl-group">
+      <div class="cl-group-title">Registry Connection</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Application submitted to Divine Registry administrator via Session</div>
+      <div class="cl-item"><div class="cl-box"></div>ENS domain name and wallet address provided</div>
+      <div class="cl-item critical"><div class="cl-box"></div>Registry verification completed — addition transaction confirmed</div>
+      <div class="cl-item critical"><div class="cl-box"></div>ENS domain appears as text record on divinelife.eth</div>
+    </div>
+  </div>
+</section>
+
+<div class="gdiv"><div class="gdiv-line"></div></div>
+
+<!-- APPENDIX -->
+<section id="appendix" class="section">
+  <div class="section-header">
+    <span class="part-num">Appendix</span>
+    <h2 class="section-title">Quick Reference — All Resources and Links</h2>
+  </div>
+  <p class="section-lead">Every external resource referenced in this guide, with its purpose and direct link. All links open in a new tab.</p>
+
+  <table class="records-table" style="font-size:14px">
+    <thead><tr><th>Resource</th><th>Purpose</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr><td><strong>divinelife.eth</strong></td><td>Master ENS domain — Divine Registry</td><td><a href="https://app.ens.domains/divinelife.eth" target="_blank">app.ens.domains/divinelife.eth ↗</a></td></tr>
+      <tr><td><strong>ENS Manager</strong></td><td>ENS domain registration and record management</td><td><a href="https://app.ens.domains" target="_blank">app.ens.domains ↗</a></td></tr>
+      <tr><td><strong>Safe</strong></td><td>Multi-signature institutional wallet</td><td><a href="https://safe.global" target="_blank">safe.global ↗</a></td></tr>
+      <tr><td><strong>MetaMask</strong></td><td>Browser wallet interface — Web3 and ENS access</td><td><a href="https://metamask.io" target="_blank">metamask.io ↗</a></td></tr>
+      <tr><td><strong>Ledger</strong></td><td>Hardware cold storage signer — Ethereum</td><td><a href="https://www.ledger.com" target="_blank">ledger.com ↗</a></td></tr>
+      <tr><td><strong>Trezor</strong></td><td>Open-source hardware cold storage signer</td><td><a href="https://trezor.io" target="_blank">trezor.io ↗</a></td></tr>
+      <tr><td><strong>Pinata</strong></td><td>IPFS pinning service — fast global document access</td><td><a href="https://www.pinata.cloud" target="_blank">pinata.cloud ↗</a></td></tr>
+      <tr><td><strong>Arweave</strong></td><td>Permanent decentralized storage — 200+ year guarantee</td><td><a href="https://www.arweave.com" target="_blank">arweave.com ↗</a></td></tr>
+      <tr><td><strong>ArConnect</strong></td><td>Arweave browser wallet for document uploads</td><td><a href="https://www.arconnect.io" target="_blank">arconnect.io ↗</a></td></tr>
+      <tr><td><strong>Session</strong></td><td>Secure decentralized messenger — all registry communications</td><td><a href="https://getsession.org" target="_blank">getsession.org ↗</a></td></tr>
+      <tr><td><strong>Etherscan</strong></td><td>On-chain transaction and ENS verification</td><td><a href="https://etherscan.io" target="_blank">etherscan.io ↗</a></td></tr>
+      <tr><td><strong>IPFS Gateway</strong></td><td>Verify document accessibility via IPFS</td><td><a href="https://ipfs.io" target="_blank">ipfs.io ↗</a></td></tr>
+      <tr><td><strong>Arweave Gateway</strong></td><td>Verify document accessibility via Arweave</td><td><a href="https://arweave.net" target="_blank">arweave.net ↗</a></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-title">The Divine Registry</div>
+  <div class="foot-domain">divinelife.eth</div>
+  <p class="foot-note">The Divine Registry does not grant you status. The law grants you status. The registry merely reflects it — permanently, verifiably, and without the possibility of revision. You are not applying for permission. You are registering what is already lawfully yours.<br><br>For legal questions specific to your jurisdiction or your Qualified Purchaser status, consult with qualified counsel familiar with UCC Article 12. For registry questions, contact the administrator exclusively through Session.</p>
+</footer>
+
+<script>
+function downloadGuide(){
+  var h='<!DOCTYPE html>'+document.documentElement.outerHTML;
+  var b=new Blob([h],{type:'text/html'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(b);
+  a.download='Divine-Registry-Qualified-Purchaser-Guide.html';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
+// Attach download to primary button
+document.querySelector('.btn-primary').onclick=function(){window.print()};
+</script>
+</body>
+</html>
